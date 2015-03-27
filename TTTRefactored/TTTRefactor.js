@@ -35,11 +35,12 @@ Player.prototype.changeTurn = function(){
 }
 //resets the game board to initial state
 TicTacToe.prototype.resetBoard = function(){
+    console.log("Hi I'm this", this);
 	this.board = [0,0,0,
              	  0,0,0,
              	  0,0,0];
-  this.firstP = true;
-  this.secP = false;
+  this.firstP.turn = true;
+  this.secP.turn = false;
   this.winner = null;
   $('.box').removeClass('x');
   $('.box').removeClass('o');
@@ -106,7 +107,8 @@ TicTacToe.prototype.checkWinner = function(mat){
                    alert(this.winner);
   } else if (count===9){
     this.winner = "Tie";
-    this.$w.html(winner);  
+    this.$w.html(this.winner);  
+    alert(this.winner);
   }
 }
 //creates new TTT game and initiates it
