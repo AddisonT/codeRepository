@@ -1,0 +1,55 @@
+#board {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 30px;
+  left: 25%;
+  text-align: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: inline-block;
+  float: left;
+  margin: 4px 4px 4px 4px;
+  color: black;
+  vertical-align: middle;
+  font-size: 100px;
+  font-family: Helvetica;
+}
+
+.buttons{
+  font-size: 26px;
+
+}
+
+.win{
+  font-size: 24px;
+}
+
+.w{
+  width: 250px;
+  text-align: center;
+}
+
+#winner{
+  float: right;
+}
+
+h1{
+  text-align: center;
+}
+
+.x{
+  color: black;
+  background: url(http://www.clker.com/cliparts/e/0/f/4/12428125621652493290X_mark_18x18_02.svg.med.png) no-repeat;
+  background-size: contain;
+}
+
+.o{
+  color: red;
+  background: url(http://cf067b.medialib.glogster.com/media/d2/d288f67bbd7805521ac44c0771a2f93362e7e60657079f8e71f8dedac4316022/let-o.jpg) no-repeat;
+  background-size: contain;
+}
