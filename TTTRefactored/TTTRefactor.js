@@ -10,7 +10,7 @@ function TicTacToe(){
     this.$w = $('#winner');
     this.$b = $('#board');
 }
-//Iniciates the game
+//Initiates the game
 TicTacToe.prototype.init = function(){
   var _this = this;
     $('#start').click(function() {
@@ -109,7 +109,7 @@ TicTacToe.prototype.checkWinner = function(mat){
     this.$w.html(winner);  
   }
 }
-//creates new TTT game and iniciates it
+//creates new TTT game and initiates it
   var ttt = new TicTacToe();
   ttt.init();
 });
