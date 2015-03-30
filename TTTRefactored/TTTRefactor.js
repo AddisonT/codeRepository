@@ -42,6 +42,7 @@ TicTacToe.prototype.resetBoard = function(){
   this.firstP.turn = true;
   this.secP.turn = false;
   this.winner = null;
+  this.$w.html("");
   $('.box').removeClass('x');
   $('.box').removeClass('o');
 }
